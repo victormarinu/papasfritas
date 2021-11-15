@@ -1,0 +1,208 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    background-image: linear-gradient(to top, #DFE9F3 0%, white 100%);
+}
+.sombra{
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+h1{
+    font-size: 3.8rem;
+    font-family: 'Roboto Mono', monospace;
+
+}
+h2{
+    font-size: 2.8rem;
+    font-family: 'Roboto Mono', monospace;
+}
+h3{
+    font-size: 1.8rem;
+    font-family: 'Roboto Mono', monospace;
+}
+h1,h2,h3{
+    text-align: center;
+}
+
+    
+span{
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.boton{
+    background-color: tomato;
+    color: white;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none;
+}
+.boton:hover{
+    background-color: rgba(0 0 0/ 50%);
+    cursor: pointer;
+}
+.fondonav{
+    background-color: rgb(114, 163, 255) ;
+}
+.navprincipal{
+display: flex;
+flex-direction: column;
+
+}
+
+@media (min-width: 768px) {
+    .navprincipal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.navprincipal a{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+.navprincipal a:hover{
+    background-color: tomato ;
+}
+
+.hero{
+    position: relative;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+    
+
+}
+.contenido-hero{
+position: absolute;
+background-color:rgba(0 0 0/ 70%);
+width: 100%;
+height: 100%;
+color: white;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+form{
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    font-family: 'Poppins', sans-serif;
+}
+@media (min-width: 768px){
+.servicios{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    
+}
+.servicio, .navprincipal, .formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+}
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.servicio h3{
+    color:tomato;
+    font-weight: 800;
+    font-weight: 700;
+
+}
+.servicio p{
+line-height: 1.5;
+text-align: center;
+
+}
+.servicio .iconos{
+height: 15rem;
+width: 15rem;
+background-color: rgb(114, 163, 255);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* formulario */
+
+.formulario{
+background: rgb(77, 76, 76);
+width: min(60rem, 100%); /*si la pantalla tiene un ancho mayor a 600px solo va a tomar el tamaño de 600px*/
+margin: 0 auto;
+padding: 2rem;
+border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    color: tomato;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.contenedor-campos{
+
+}
+
+.campo{
+margin-bottom: 1rem;
+}
+.formulario label{
+    color: white;
+    margin-bottom: 0.2rem;
+    display: block;
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.enviar .boton{
+    width: 100%;
+}
+.campo textarea{
+    height: 10rem;
+}
+.pie{
+    text-align: center;
+}
